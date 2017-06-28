@@ -25,6 +25,14 @@ public abstract class AbstractPersonSolution implements PersonSolution {
     this.sname = sname;
   }
 
+  /**
+   * This overrides the toString method inherited from Object.
+   * Since we wrote a PrintPerson function, we didn't need this,
+   * however println calls the toString method on an object to get
+   * the output that it prints to console, so with this we could drop
+   * the PrintPerson helper method and just pass the object to println.
+   * @return
+   */
   @Override
   public String toString() {
     return getName();
